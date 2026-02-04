@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment | ABM Launchpad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="LAUNCHPAD (3).png">
+<link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 70px;
+    }
+
+    .payment-container {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row > div {
+      flex: 1;
+    }
+
+    .pay-btn {
+      margin-top: 25px;
+      width: 100%;
+      padding: 14px;
+      background: #ffb703;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-btn-global">← Back</a>
+
+
+  <div class="payment-container">
+    <h1>Payment Details</h1>
+
+    <!-- Card Number -->
+    <label>
+      Card Number
+      <input type="text" placeholder="1234 5678 9012 3456">
+    </label>
+
+    <!-- FIXED MIDDLE SECTION (HTML ONLY) -->
+    <div class="row">
+      <div>
+        <label>
+          Expiry Date
+          <input type="text" placeholder="MM/YY">
+        </label>
+      </div>
+
+      <div>
+        <label>
+          CVC / CVV
+          <input type="text" placeholder="123">
+        </label>
+      </div>
+    </div>
+
+    <!-- Name -->
+    <label>
+      Name on Card
+      <input type="text" placeholder="Full Name">
+    </label>
+
+    <form action="module.html">
+  <button type="submit" class="pay-btn">
+    Pay ₱1,499
+  </button>
+</form>
+
+
+
+
+    <p class="note">
+      This is a demo payment page. No real transactions are processed.
+    </p>
+  </div>
+
+</body>
+</html>
